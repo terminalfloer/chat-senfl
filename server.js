@@ -30,7 +30,7 @@ const botName = "Chat-Senfl Bot";
   io.adapter(createAdapter(pubClient, subClient));
 })();
 
-// Ausführen, wenn der Client eine Verbindung herstellt
+// Ausführen wenn der Client eine Verbindung herstellt
 io.on("connection", (socket) => {
   console.log(io.of("/").adapter);
   socket.on("joinRoom", ({ username, room }) => {
@@ -63,7 +63,7 @@ io.on("connection", (socket) => {
     io.to(user.room).emit("message", formatMessage(user.username, msg));
   });
 
-  // Wird ausgeführt, wenn der Client die Verbindung trennt
+  // Wird ausgeführt wenn der Client die Verbindung trennt
   socket.on("disconnect", () => {
     const user = userLeave(socket.id);
 
