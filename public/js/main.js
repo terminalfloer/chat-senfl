@@ -80,7 +80,7 @@ function outputUsers(users) {
   });
 }
 
-//Prompt bevor ein Chatraum verlassen wird
+//Erinnerungsfenster bevor ein Chatraum verlassen wird
 document.getElementById('leave-btn').addEventListener('click', () => {
   const leaveRoom = confirm('Bist du sicher, dass du den Chatraum verlassen willst?');
   if (leaveRoom) {
