@@ -10,4 +10,4 @@ Go to localhost:3000
 ```
 
 ## Notizen
-Der *_html_css* Folder ist nur ein Starter-Template 
+Der *_html_css* Folder ist ein Starter-Template 
